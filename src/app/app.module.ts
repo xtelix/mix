@@ -1,3 +1,6 @@
+import { Pagina6Page } from './../pages/pagina6/pagina6';
+import { Pagina4Page } from './../pages/pagina4/pagina4';
+import { Pagina3Page } from './../pages/pagina3/pagina3';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -7,10 +10,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    Pagina3Page,
+    Pagina6Page
   ],
   imports: [
     BrowserModule,
@@ -19,7 +25,9 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    Pagina3Page,
+    Pagina6Page
   ],
   providers: [
     StatusBar,
